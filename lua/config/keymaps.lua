@@ -30,8 +30,8 @@ keymap.set("n", "<leader><CR>", ":nohlsearch<CR>")
 keymap.set("n", "E", "K") --把E改为帮助
 keymap.set({'n', 'v'}, "K", "5k")
 keymap.set({'n', 'v'}, "J", "5j")
---keymap.set({'n', 'v'}, "sh", "^")
---keymap.set({'n', 'v'}, "sl", "$")
+keymap.set({'n', 'v'}, "zh", "^")
+keymap.set({'n', 'v'}, "zl", "$")
 
 
 -- 跳转书签

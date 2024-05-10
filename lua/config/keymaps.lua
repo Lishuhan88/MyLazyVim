@@ -19,7 +19,7 @@ keymap.set("n", "'", "<nop>") --让'键不做任何功能
 --keymap.set("n", "t", "'") --互换t和'
 --keymap.set("n", "'", "t") --互换t和'
 -- 保存退出
---keymap.set("n", "S", ":wall<CR>")
+keymap.set("n", "M", ":wall<CR>")
 keymap.set("n", "q", ":q<CR>")
 keymap.set("n", "Q", ":qall<CR>")
 

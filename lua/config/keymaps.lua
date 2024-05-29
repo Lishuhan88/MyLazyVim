@@ -14,7 +14,7 @@ keymap.set("i", "<c-l>", "<esc>A")
 
 -- ------------- 正常模式 ------------- ---
 keymap.set("n", "|", "q") --把原有q键的宏录制改为|键
-keymap.set("n", "s", "<nop>") --让s键不做任何功能
+--keymap.set("n", "s", "<nop>") --让s键不做任何功能
 keymap.set("n", "'", "<nop>") --让'键不做任何功能
 --keymap.set("n", "t", "'") --互换t和'
 --keymap.set("n", "'", "t") --互换t和'

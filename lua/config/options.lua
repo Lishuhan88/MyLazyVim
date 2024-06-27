@@ -6,20 +6,22 @@ local opt = vim.opt
 
 -- 缩进
 opt.autoindent = true --设置自动缩进
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.softtabstop = 4
-opt.expandtab = true
-opt.cindent = true
-opt.smarttab = true
-opt.shiftround = true
-opt.autoindent = true
-opt.smartindent = true
+opt.cindent = true --启用c/c++风格缩进
+vim.cmd("set cinoptions=g0,:0,N-s,(0") --设置C/C++语言的具体缩进方式
+opt.smartindent = true --智能的选择对其方式
+vim.cmd("filetype indent on") --自适应不同语言的智能缩进
+opt.expandtab = true --将制表符扩展为空格
+opt.tabstop = 4 --设置编辑时制表符占用空格数
+opt.shiftwidth = 4 --设置格式化时制表符占用空格数
+opt.softtabstop = 4 --设置4个空格为制表符
+opt.smarttab = true --在行和段开始处使用制表符
+vim.cmd("set backspace=2") --使用回车键正确处理indent,eol,start等
+opt.sidescroll = 10 --设置向右滚动字符数
+vim.cmd("set tw=0")
+vim.cmd("set indentexpr=")
+vim.cmd("set autochdir")
 
-vim.cmd('set cindent')
-vim.cmd('set cinoptions=g0,:0,N-s,(0')
-vim.cmd('set smartindent')
-vim.cmd('set smartcase')
+vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o") --解决o携带注释插入下一行的问题
 
 -- 超出屏幕范围的内容自动换行显示
 opt.wrap = true

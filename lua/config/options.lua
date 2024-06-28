@@ -7,9 +7,9 @@ local opt = vim.opt
 -- 缩进
 opt.autoindent = true --设置自动缩进
 opt.cindent = true --启用c/c++风格缩进
-vim.cmd("set cinoptions=g0,:0,N-s,(0") --设置C/C++语言的具体缩进方式
+
 opt.smartindent = true --智能的选择对其方式
-vim.cmd("filetype indent on") --自适应不同语言的智能缩进
+
 opt.expandtab = true --将制表符扩展为空格
 opt.tabstop = 4 --设置编辑时制表符占用空格数
 opt.shiftwidth = 4 --设置格式化时制表符占用空格数
